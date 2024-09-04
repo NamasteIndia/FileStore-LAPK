@@ -2,7 +2,7 @@
 
 from aiohttp import web
 from plugins import web_server
-
+import pyrogram.utils  # Importing pyrogram.utils
 import pyromod.listen
 from pyrogram import Client
 from pyrogram.enums import ParseMode
@@ -15,7 +15,11 @@ from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE
 name ="""
  BY MIKEY FROM TG
 """
-
+# Set MIN_CHANNEL_ID based on the CHANNEL_ID from config
+if isinstance(CHANNEL_ID, int) and CHANNEL_ID < 0:
+    pyrogram.utils.MIN_CHANNEL_ID = CHANNEL_ID
+else:
+    raise ValueError("CHANNEL_ID must be a negative integer representing a valid Telegram channel ID.")
 
 class Bot(Client):
     def __init__(self):
