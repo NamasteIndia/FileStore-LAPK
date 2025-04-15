@@ -46,9 +46,27 @@ FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "")) # auto delete in secon
 START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/8784a1e815fcd20eff3a4.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://telegra.ph/file/8784a1e815fcd20eff3a4.jpg")
 
-HELP_TXT = "<b>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @apkmod_downloads\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/sukumarnanda>Sukumar</a></b>"
-ABOUT_TXT = "<b>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/sukumarnanda>sukumar</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://liteapks.ORG>LITEAPKS</a>\n◈"
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
+HELP_TXT = (
+    "<b>📁 File Link BOT for ModderSU.COM</b>\n\n"
+    "<b>❏ BOT COMMANDS</b>\n"
+    "├ <code>/start</code> : Start the bot\n"
+    "├ <code>/about</code> : Bot information\n"
+    "└ <code>/help</code> : Help menu\n\n"
+    "🔗 Just click on a link, start the bot, join both channels, and try again. That's it!\n\n"
+    "👨‍💻 Developed by <a href='https://t.me/sukumarnanda'>Sukumar</a>"
+)
+
+ABOUT_TXT = (
+    "<b>◈ Creator:</b> <a href='https://t.me/sukumarnanda'>Sukumar</a>\n"
+    "<b>◈ Founder of:</b> <a href='https://liteapks.org'>LITEAPKS</a>\n"
+    "<b>◈ Partner Site:</b> <a href='https://moddersu.com'>ModderSU</a>"
+)
+
+
+START_MSG = os.environ.get("START_MESSAGE", 
+    "<b>This bot is not available in your region.</b>"
+)
+
 
 try:
     ADMINS = [6376328008]
@@ -71,7 +89,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "Wait ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ Boss!!"
+USER_REPLY_TEXT = "This Bot is not available in your region."
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(5191566338)
