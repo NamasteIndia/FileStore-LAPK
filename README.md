@@ -22,6 +22,7 @@
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
 * `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
+* FILE_AUTO_DELETE =600 (SECONDS)
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
 
