@@ -92,7 +92,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚡️ Channel', url='https://t.me/apkmod_downloads'),
+                    InlineKeyboardButton('⚡️ Channel', url='https://t.me/+ac9MIOFdHmNkNDM0'),
                     InlineKeyboardButton('🍁 Support', url='https://t.me/requestcenterr')
                 ]
             ]
@@ -221,4 +221,4 @@ async def delete_files(messages, client, k):
         keyboard = None
 
     # Edit message with the button
-    await k.edit_text("<b><i>The file has been successfully deleted. ✅</i></b>", reply_markup=keyboard)
+    await k.edit_text("<b><i>The file has been deleted. Repeat the process to regenerate. ✅</i></b>", reply_markup=keyboard)
