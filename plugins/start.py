@@ -82,7 +82,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text = f"<b><i>This file will be deleted automatically in {file_auto_delete}. Forward it to your Saved Messages to keep it!</i></b>"
+                                      text = f"<b><i>This file will be deleted automatically in {file_auto_delete}. Forward it to your Saved Messages to keep it!</i></b>")
 
 
         # Schedule the file deletion
